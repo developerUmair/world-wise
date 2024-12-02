@@ -1,106 +1,78 @@
-/* Add this in a separate CSS file (e.g., App.css) or in a <style> tag */
-body {
+/* Taken from getting started guide at: https://leafletjs.com/examples/quick-start/ */
+@import "https://unpkg.com/leaflet@1.7.1/dist/leaflet.css";
+@import "https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap";
+
+/* These CSS variables are global, so they are available in all CSS modules */
+:root {
+  --color-brand--1: #ffb545;
+  --color-brand--2: #00c46a;
+
+  --color-dark--0: #242a2e;
+  --color-dark--1: #2d3439;
+  --color-dark--2: #42484d;
+  --color-light--1: #aaa;
+  --color-light--2: #ececec;
+  --color-light--3: #d6dee0;
+}
+
+* {
   margin: 0;
   padding: 0;
-  font-family: 'Comic Sans MS', cursive, sans-serif; /* Fun font */
-  background-color: #fdfd96; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  overflow: hidden;
+  box-sizing: inherit;
 }
 
-.container {
-  background-color: #ffcccb; 
-  padding: 30px;
-  border-radius: 20px; 
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  width: 400px;
-  animation: popIn 0.5s ease-in-out; 
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
 }
 
-h1 {
-  color: #ff6f61; 
-  font-size: 2rem;
-  margin-bottom: 20px;
-  letter-spacing: 1px;
+body {
+  font-family: "Manrope", sans-serif;
+  color: var(--color-light--2);
+  font-weight: 400;
+  line-height: 1.6;
 }
 
-input[type="number"] {
-  width: 80%;
-  padding: 10px;
-  margin-bottom: 20px;
-  font-size: 1.2rem;
-  border: none;
-  border-radius: 10px;
-  outline: none;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s ease;
+label {
+  font-size: 1.6rem;
+  font-weight: 600;
 }
 
-input[type="number"]:focus {
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-.btn {
+input,
+textarea {
   width: 100%;
-  padding: 15px;
-  background-color: #4caf50; 
-  color: white;
-  font-size: 1.2rem;
-  font-weight: bold;
+  padding: 0.8rem 1.2rem;
+  font-family: inherit;
+  font-size: 1.6rem;
   border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  background-color: var(--color-light--3);
+  transition: all 0.2s;
 }
 
-button:hover {
-  background-color: #45a049;
+input:focus {
+  outline: none;
+  background-color: #fff;
 }
 
-.message {
-  color: #ff6f61;
-  font-size: 1.5rem;
-  margin-top: 20px;
-  animation: bounceIn 0.5s ease-in-out;
+.cta:link,
+.cta:visited {
+  display: inline-block;
+  background-color: var(--color-brand--2);
+  color: var(--color-dark--1);
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 1rem 3rem;
+  border-radius: 5px;
 }
 
-.score-container {
-  background-color: #fdfd96; /* Fun yellow score background */
-  padding: 10px;
-  border-radius: 10px;
-  margin-bottom: 20px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-}
-
-.score-container p {
-  margin: 5px 0;
-  font-size: 1.2rem;
-}
-
-@keyframes popIn {
-  0% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-@keyframes bounceIn {
-  0% {
-    transform: scale(0.5);
-    opacity: 0;
-  }
-  50% {
-    transform: scale(1.2);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1);
-  }
-}
+/*
+"importCSSModule": {
+    "prefix": "csm",
+    "scope": "javascript,typescript,javascriptreact",
+    "body": ["import styles from './${TM_FILENAME_BASE}.module.css'"],
+    "description": "Import CSS Module as `styles`"
+  },
+*/
