@@ -46,7 +46,7 @@ const CityItem = ({ city }) => {
             alt={`${cityName} flag`}
           />
         ) : (
-          "Loading..."
+          emoji
         )}
       </span>
       <h3 className={styles.name}>{cityName}</h3>
