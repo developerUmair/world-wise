@@ -15,7 +15,7 @@ const getCountryCodeFromEmoji = (emoji) =>
     .join("");
 
 const CityItem = ({ city }) => {
-  const { cityName, emoji, date } = city;
+  const { cityName, emoji, date, position } = city;
   const [flagUrl, setFlagUrl] = useState("");
 
   useEffect(() => {
@@ -27,8 +27,8 @@ const CityItem = ({ city }) => {
         );
         if (!response.ok) throw new Error("Failed to fetch flag");
         const data = await response.json();
-        const flag = data[0]?.flags?.svg || ""; 
-        setFlagUrl(flag); 
+        const flag = data[0]?.flags?.svg || "";
+        setFlagUrl(flag);
       } catch (error) {
         console.error("Error fetching flag:", error);
       }
@@ -38,22 +38,24 @@ const CityItem = ({ city }) => {
   }, [emoji]);
 
   return (
-    <Link className={styles.cityItem} to={`cities/${city.id}`}>
-      <span className={styles.emoji}>
-        {flagUrl ? (
-          <img
-            src={flagUrl}
-            className={styles.emoji}
-            alt={`${cityName} flag`}
-          />
-        ) : (
-          emoji
-        )}
-      </span>
-      <h3 className={styles.name}>{cityName}</h3>
-      <time className={styles.date}>({formatDate(date)})</time>
+    <li >
+      <Link to={`${city.id}?lat=${position.lat}&lng=${position.lng}`} className={styles.cityItem}>
+        <span className={styles.emoji}>
+          {flagUrl ? (
+            <img
+              src={flagUrl}
+              className={styles.emoji}
+              alt={`${cityName} flag`}
+            />
+          ) : (
+            emoji
+          )}
+        </span>
+        <h3 className={styles.name}>{cityName}</h3>
+        <time className={styles.date}>({formatDate(date)})</time>
       <button className={styles.deleteBtn}>&times;</button>
-    </Link>
+      </Link>
+    </li>
   );
 };
 
