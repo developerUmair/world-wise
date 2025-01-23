@@ -6,7 +6,7 @@ import Message from "./Message";
 import { useCities } from "../contexts/CitiesContext";
 
 const CountryList = () => {
-  const {cities, loading} = useCities();
+  const { cities, loading } = useCities();
 
   if (loading) return <Spinner />;
   if (!cities.length)
@@ -18,11 +18,12 @@ const CountryList = () => {
     (arr, city) =>
       arr.some((el) => el.country === city.country)
         ? arr
-        : [...arr, { country: city.country, emoji: city.emoji }],
+        : [...arr, { country: city.country, emoji: city.emoji, flagUrl: city.flagUrl }],
     []
   );
 
-  
+  console.log(countries);
+
   return (
     <ul className={styles.countryList}>
       {countries?.map((country) => (
