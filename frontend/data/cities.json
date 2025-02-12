@@ -71,6 +71,19 @@
         "lng": 6.9603
       },
       "id": 4567965456
+    },
+    {
+      "cityName": "Saint Petersburg",
+      "country": "Russia",
+      "emoji": "🇷🇺",
+      "date": "2027-06-20T14:30:00.000Z",
+      "notes": "Beautiful architecture and history!",
+      "position": {
+        "lat": 59.9343,
+        "lng": 30.3351
+      },
+      "id": 98765432
     }
+    
   ]
 }
