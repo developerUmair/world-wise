@@ -4,15 +4,17 @@ import { useEffect, useState } from "react";
 
 import styles from "./Form.module.css";
 import Button from "./Button";
-import { useNavigate } from "react-router-dom";
 import BackButton from "./BackButton";
 import { useUrlPosition } from "../hooks/useUrlPosition";
 import Message from "./Message";
 import Spinner from "./Spinner";
+import DatePicker from "react-datepicker";
+import { useCities } from "../contexts/CitiesContext";
 
 const BASE_URL = "https://api.bigdatacloud.net/data/reverse-geocode-client";
 
 function Form() {
+  const { createCity } = useCities();
   const [cityName, setCityName] = useState("");
   const [country, setCountry] = useState("");
   const [date, setDate] = useState(new Date());
@@ -21,27 +23,25 @@ function Form() {
   const [cityLoading, setCityLoading] = useState(false);
   const [emoji, setEmoji] = useState("");
   const [flag, setFlag] = useState(null);
-  const [error, setError] = useState('');
+  const [error, setError] = useState("");
 
-  console.log("flag", flag);
-
-  console.log("emoji", emoji);
-
-  const navigate = useNavigate();
+  console.log(date && date.toLocaleDateString("en-US", { timeZone: "UTC" }));
 
   const fetchCity = async () => {
-    if(!lat || !lng) return;
+    if (!lat || !lng) return;
     try {
       setCityLoading(true);
-      setError('');
+      setError("");
       const response = await fetch(
         `${BASE_URL}?latitude=${lat}&longitude=${lng}`
       );
 
       const data = await response.json();
 
-      if(!data.countryCode){
-        throw new Error("That doesn't seem to city. Click somewhere else on the map.😉");
+      if (!data.countryCode) {
+        throw new Error(
+          "That doesn't seem to city. Click somewhere else on the map.😉"
+        );
       }
       setCityName(data.city || data.locality);
       setCountry(data.countryName);
@@ -69,10 +69,6 @@ function Form() {
     }
   }
 
-  const fetchFlag = async () => {
-    await fetchFlagUrl(emoji);
-  };
-
   useEffect(() => {
     if (lat && lng) {
       fetchCity();
@@ -85,12 +81,30 @@ function Form() {
     }
   }, [emoji]);
 
-  if(cityLoading) return <Spinner />
-  if(!lat || !lng) return <Message message="Click on the map to add a city" />
-  if(error) return <Message message={error} />
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const newCity = {
+      cityName,
+      country,
+      emoji: flag,
+      date,
+      notes,
+      postition: {
+        lat,
+        lng,
+      },
+    };
+
+    createCity(newCity)
+  };
+
+  if (cityLoading) return <Spinner />;
+  if (!lat || !lng) return <Message message="Click on the map to add a city" />;
+  if (error) return <Message message={error} />;
 
   return (
-    <form className={styles.form}>
+    <form className={styles.form} onSubmit={handleSubmit}>
       <div className={styles.row}>
         <label htmlFor="cityName">City name</label>
         <input
@@ -103,10 +117,11 @@ function Form() {
 
       <div className={styles.row}>
         <label htmlFor="date">When did you go to {cityName}?</label>
-        <input
+        <DatePicker
           id="date"
-          onChange={(e) => setDate(e.target.value)}
-          value={date}
+          selected={date}
+          onChange={(date) => setDate(date)}
+          dateFormat="dd/MM/yyyy"
         />
       </div>
 

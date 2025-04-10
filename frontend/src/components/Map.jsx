@@ -16,14 +16,13 @@ import { useUrlPosition } from "../hooks/useUrlPosition";
 
 const Map = () => {
   const { cities } = useCities();
-  const [mapLat, mapLng] = useUrlPosition()
+  const [lat, lng] = useUrlPosition()
   const { isLoading, position, getPosition } = useGeolocation();
   const [mapPosition, setMapPosition] = useState([40, 0]);
 
-
   useEffect(() => {
-    if (mapLat && mapLng) setMapPosition([mapLat, mapLng]);
-  }, [mapLat, mapLng]);
+    if (lat && lng) setMapPosition([lat, lng]);
+  }, [lat, lng]);
 
   useEffect(() => {
     if (position) {

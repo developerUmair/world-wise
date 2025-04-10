@@ -10,7 +10,7 @@
         "lat": 38.7169,
         "lng": -9.1399
       },
-      "id": 73930385
+      "id": "73930385"
     },
     {
       "cityName": "Madrid",
@@ -22,7 +22,7 @@
         "lat": 40.4168,
         "lng": -3.7038
       },
-      "id": 17806751
+      "id": "17806751"
     },
     {
       "cityName": "Berlin",
@@ -31,10 +31,10 @@
       "date": "2027-02-12T09:24:11.863Z",
       "notes": "Amazing 😃",
       "position": {
-        "lat": 52.5200,
-        "lng": 13.4050
+        "lat": 52.52,
+        "lng": 13.405
       },
-      "id": 98443197
+      "id": "98443197"
     },
     {
       "cityName": "Barcelona",
@@ -46,7 +46,7 @@
         "lat": 41.3874,
         "lng": 2.1686
       },
-      "id": 733330385
+      "id": "733330385"
     },
     {
       "cityName": "Valencia",
@@ -58,7 +58,7 @@
         "lat": 39.4699,
         "lng": -0.3763
       },
-      "id": 17126751
+      "id": "17126751"
     },
     {
       "cityName": "Cologne",
@@ -70,7 +70,7 @@
         "lat": 50.9375,
         "lng": 6.9603
       },
-      "id": 4567965456
+      "id": "4567965456"
     },
     {
       "cityName": "Saint Petersburg",
@@ -82,8 +82,55 @@
         "lat": 59.9343,
         "lng": 30.3351
       },
-      "id": 98765432
+      "id": "98765432"
+    },
+    {
+      "id": "c3d6",
+      "cityName": "Bogazliyan",
+      "country": "Turkiye",
+      "emoji": "TR",
+      "date": "2025-04-10T11:41:29.160Z",
+      "notes": "some testing city",
+      "postition": {
+        "lat": "39.26628442213066",
+        "lng": "35.24414062500001"
+      }
+    },
+    {
+      "id": "8ca0",
+      "cityName": "Foggaret Ezzaou",
+      "country": "Algeria",
+      "emoji": "DZ",
+      "date": "2025-04-10T11:42:59.055Z",
+      "notes": "Tunisia Algeria",
+      "postition": {
+        "lat": "27.68352808378776",
+        "lng": "3.6914062500000004"
+      }
+    },
+    {
+      "id": "c49b",
+      "cityName": "Ouadane",
+      "country": "Mauritania",
+      "emoji": "MR",
+      "date": "2025-04-10T11:43:18.951Z",
+      "notes": "Ouadane city",
+      "postition": {
+        "lat": "21.04349121680354",
+        "lng": "-8.261718750000002"
+      }
+    },
+    {
+      "id": "4e29",
+      "cityName": "Teruel",
+      "country": "Spain",
+      "emoji": "https://flagcdn.com/es.svg",
+      "date": "2025-04-10T11:45:41.350Z",
+      "notes": "Teurel city notes",
+      "postition": {
+        "lat": "40.3549167507906",
+        "lng": "-1.0052490234375002"
+      }
     }
-    
   ]
 }
