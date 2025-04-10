@@ -30,6 +30,7 @@ function Form() {
   const navigate = useNavigate();
 
   const fetchCity = async () => {
+    if(!lat || !lng) return;
     try {
       setCityLoading(true);
       setError('');
@@ -85,6 +86,7 @@ function Form() {
   }, [emoji]);
 
   if(cityLoading) return <Spinner />
+  if(!lat || !lng) return <Message message="Click on the map to add a city" />
   if(error) return <Message message={error} />
 
   return (
