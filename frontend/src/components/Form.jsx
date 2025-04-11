@@ -10,11 +10,13 @@ import Message from "./Message";
 import Spinner from "./Spinner";
 import DatePicker from "react-datepicker";
 import { useCities } from "../contexts/CitiesContext";
+import { useNavigate } from "react-router-dom";
 
 const BASE_URL = "https://api.bigdatacloud.net/data/reverse-geocode-client";
 
 function Form() {
-  const { createCity } = useCities();
+  const navigate = useNavigate()
+  const { createCity, loading } = useCities();
   const [cityName, setCityName] = useState("");
   const [country, setCountry] = useState("");
   const [date, setDate] = useState(new Date());
@@ -81,7 +83,7 @@ function Form() {
     }
   }, [emoji]);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     const newCity = {
@@ -96,7 +98,8 @@ function Form() {
       },
     };
 
-    createCity(newCity)
+    await createCity(newCity)
+    navigate("/app/cities")
   };
 
   if (cityLoading) return <Spinner />;
@@ -104,7 +107,7 @@ function Form() {
   if (error) return <Message message={error} />;
 
   return (
-    <form className={styles.form} onSubmit={handleSubmit}>
+  <form className={`${styles.form} ${loading ? styles.loading : ""}`} onSubmit={handleSubmit}>
       <div className={styles.row}>
         <label htmlFor="cityName">City name</label>
         <input

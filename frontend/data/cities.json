@@ -85,42 +85,6 @@
       "id": "98765432"
     },
     {
-      "id": "c3d6",
-      "cityName": "Bogazliyan",
-      "country": "Turkiye",
-      "emoji": "TR",
-      "date": "2025-04-10T11:41:29.160Z",
-      "notes": "some testing city",
-      "postition": {
-        "lat": "39.26628442213066",
-        "lng": "35.24414062500001"
-      }
-    },
-    {
-      "id": "8ca0",
-      "cityName": "Foggaret Ezzaou",
-      "country": "Algeria",
-      "emoji": "DZ",
-      "date": "2025-04-10T11:42:59.055Z",
-      "notes": "Tunisia Algeria",
-      "postition": {
-        "lat": "27.68352808378776",
-        "lng": "3.6914062500000004"
-      }
-    },
-    {
-      "id": "c49b",
-      "cityName": "Ouadane",
-      "country": "Mauritania",
-      "emoji": "MR",
-      "date": "2025-04-10T11:43:18.951Z",
-      "notes": "Ouadane city",
-      "postition": {
-        "lat": "21.04349121680354",
-        "lng": "-8.261718750000002"
-      }
-    },
-    {
       "id": "4e29",
       "cityName": "Teruel",
       "country": "Spain",
@@ -130,6 +94,78 @@
       "postition": {
         "lat": "40.3549167507906",
         "lng": "-1.0052490234375002"
+      }
+    },
+    {
+      "id": "f8b4",
+      "cityName": "Bolligen",
+      "country": "Switzerland",
+      "emoji": "https://flagcdn.com/ch.svg",
+      "date": "2025-04-11T11:40:06.628Z",
+      "notes": "Austria City",
+      "postition": {
+        "lat": "46.965259400349275",
+        "lng": "7.536621093750001"
+      }
+    },
+    {
+      "id": "5c47",
+      "cityName": "Hradiste",
+      "country": "Czechia",
+      "emoji": "https://flagcdn.com/cz.svg",
+      "date": "2025-04-11T11:49:22.519Z",
+      "notes": "Bulgaria",
+      "postition": {
+        "lat": "50.24720490139267",
+        "lng": "13.084716796875"
+      }
+    },
+    {
+      "id": "cd92",
+      "cityName": "Prochowice",
+      "country": "Poland",
+      "emoji": "https://flagcdn.com/pl.svg",
+      "date": "2025-04-11T11:50:45.910Z",
+      "notes": "Poland",
+      "postition": {
+        "lat": "51.213765926935025",
+        "lng": "16.353149414062504"
+      }
+    },
+    {
+      "id": "7749",
+      "cityName": "Nikolayevsk",
+      "country": "Russian Federation (the)",
+      "emoji": "https://flagcdn.com/ru.svg",
+      "date": "2025-04-11T11:51:20.883Z",
+      "notes": "Moscow",
+      "postition": {
+        "lat": "50.08886893382967",
+        "lng": "45.65368652343751"
+      }
+    },
+    {
+      "id": "6a1a",
+      "cityName": "Bojnurd",
+      "country": "Iran (Islamic Republic of)",
+      "emoji": "https://flagcdn.com/ir.svg",
+      "date": "2025-04-11T11:51:54.398Z",
+      "notes": "Iran",
+      "postition": {
+        "lat": "37.474858084971046",
+        "lng": "57.4200439453125"
+      }
+    },
+    {
+      "id": "b163",
+      "cityName": "Bamyan",
+      "country": "Afghanistan",
+      "emoji": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_the_Taliban.svg",
+      "date": "2025-04-11T11:53:38.021Z",
+      "notes": "Afghanistan",
+      "postition": {
+        "lat": "34.836349990763864",
+        "lng": "67.92846679687501"
       }
     }
   ]

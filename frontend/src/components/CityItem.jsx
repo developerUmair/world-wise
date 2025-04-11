@@ -18,6 +18,8 @@ const CityItem = ({ city }) => {
   const { cityName, emoji, date, position, id, flagUrl } = city;
   const { currentCity } = useCities();
 
+  console.log("cityItem", city);
+
   return (
     <li>
       <Link
@@ -27,15 +29,12 @@ const CityItem = ({ city }) => {
         }`}
       >
         <span className={styles.emoji}>
-          {flagUrl ? (
             <img
-              src={flagUrl}
+              src={flagUrl || emoji}
               className={styles.emoji}
               alt={`${cityName} flag`}
             />
-          ) : (
-            emoji
-          )}
+          
         </span>
         <h3 className={styles.name}>{cityName}</h3>
         <time className={styles.date}>({formatDate(date)})</time>
