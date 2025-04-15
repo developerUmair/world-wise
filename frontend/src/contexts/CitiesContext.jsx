@@ -67,6 +67,23 @@ function CitiesProvider({ children }) {
       setLoading(false);
     }
   }
+  async function deleteCity(cityId) {
+    try {
+      setLoading(true);
+      const res = await fetch(`${BASE_URL}/cities/${cityId}`, {
+        method: "DELETE",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+      if (!res.ok) throw new Error("Failed to delete city");
+      setCities(prevCities => prevCities.filter(city => city.id !== cityId));
+    } catch (error) {
+      alert("Something went wrong in deleting city city");
+    } finally {
+      setLoading(false);
+    }
+  }
 
   async function fetchFlagUrl(emoji) {
     try {
@@ -88,7 +105,7 @@ function CitiesProvider({ children }) {
   }, []);
 
   return (
-    <CitiesContext.Provider value={{ cities, loading, getCity, currentCity, createCity }}>
+    <CitiesContext.Provider value={{ cities, loading, getCity, currentCity, createCity, deleteCity }}>
       {children}
     </CitiesContext.Provider>
   );

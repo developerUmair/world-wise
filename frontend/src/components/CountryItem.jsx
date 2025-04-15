@@ -4,9 +4,9 @@ function CountryItem({ country }) {
   return (
     <li className={styles.countryItem}>
       {/* <span>{country.emoji}</span> */}
-      <span>{country.flagUrl ? (
+      <span>{country.emoji ? (
                 <img
-                  src={country?.flagUrl}
+                  src={country?.emoji}
                   style={{ width: "4rem" }}
                   className={styles.emoji}
                   alt={`${country?.country} flag`}

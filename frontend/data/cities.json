@@ -1,171 +1,51 @@
 {
   "cities": [
     {
-      "cityName": "Lisbon",
-      "country": "Portugal",
-      "emoji": "🇵🇹",
-      "date": "2027-10-31T15:59:59.138Z",
-      "notes": "My favorite city so far!",
-      "position": {
-        "lat": 38.7169,
-        "lng": -9.1399
-      },
-      "id": "73930385"
-    },
-    {
-      "cityName": "Madrid",
-      "country": "Spain",
-      "emoji": "🇪🇸",
-      "date": "2027-07-15T08:22:53.976Z",
-      "notes": "",
-      "position": {
-        "lat": 40.4168,
-        "lng": -3.7038
-      },
-      "id": "17806751"
-    },
-    {
-      "cityName": "Berlin",
-      "country": "Germany",
-      "emoji": "🇩🇪",
-      "date": "2027-02-12T09:24:11.863Z",
-      "notes": "Amazing 😃",
-      "position": {
-        "lat": 52.52,
-        "lng": 13.405
-      },
-      "id": "98443197"
-    },
-    {
-      "cityName": "Barcelona",
-      "country": "Spain",
-      "emoji": "🇪🇸",
-      "date": "2027-10-31T15:59:59.138Z",
-      "notes": "My favorite city so far!",
-      "position": {
-        "lat": 41.3874,
-        "lng": 2.1686
-      },
-      "id": "733330385"
-    },
-    {
-      "cityName": "Valencia",
-      "country": "Spain",
-      "emoji": "🇪🇸",
-      "date": "2027-07-15T08:22:53.976Z",
-      "notes": "",
-      "position": {
-        "lat": 39.4699,
-        "lng": -0.3763
-      },
-      "id": "17126751"
-    },
-    {
-      "cityName": "Cologne",
-      "country": "Germany",
-      "emoji": "🇩🇪",
-      "date": "2027-02-12T09:24:11.863Z",
-      "notes": "Amazing 😃",
-      "position": {
-        "lat": 50.9375,
-        "lng": 6.9603
-      },
-      "id": "4567965456"
-    },
-    {
-      "cityName": "Saint Petersburg",
-      "country": "Russia",
-      "emoji": "🇷🇺",
-      "date": "2027-06-20T14:30:00.000Z",
-      "notes": "Beautiful architecture and history!",
-      "position": {
-        "lat": 59.9343,
-        "lng": 30.3351
-      },
-      "id": "98765432"
-    },
-    {
-      "id": "4e29",
-      "cityName": "Teruel",
+      "id": "8217",
+      "cityName": "La Puebla de Valverde",
       "country": "Spain",
       "emoji": "https://flagcdn.com/es.svg",
-      "date": "2025-04-10T11:45:41.350Z",
-      "notes": "Teurel city notes",
-      "postition": {
-        "lat": "40.3549167507906",
-        "lng": "-1.0052490234375002"
+      "date": "2025-04-15T08:48:24.690Z",
+      "notes": "",
+      "position": {
+        "lat": "40.317231732315236",
+        "lng": "-0.9613037109375001"
       }
     },
     {
-      "id": "f8b4",
-      "cityName": "Bolligen",
-      "country": "Switzerland",
-      "emoji": "https://flagcdn.com/ch.svg",
-      "date": "2025-04-11T11:40:06.628Z",
-      "notes": "Austria City",
-      "postition": {
-        "lat": "46.965259400349275",
-        "lng": "7.536621093750001"
+      "id": "85dc",
+      "cityName": "Idri",
+      "country": "Libya",
+      "emoji": "https://flagcdn.com/ly.svg",
+      "date": "2025-04-15T08:48:48.086Z",
+      "notes": "",
+      "position": {
+        "lat": "28.38173504322311",
+        "lng": "10.079956054687502"
       }
     },
     {
-      "id": "5c47",
-      "cityName": "Hradiste",
-      "country": "Czechia",
-      "emoji": "https://flagcdn.com/cz.svg",
-      "date": "2025-04-11T11:49:22.519Z",
-      "notes": "Bulgaria",
-      "postition": {
-        "lat": "50.24720490139267",
-        "lng": "13.084716796875"
+      "id": "80cd",
+      "cityName": "Murzuk",
+      "country": "Libya",
+      "emoji": "https://flagcdn.com/ly.svg",
+      "date": "2025-04-15T08:48:56.496Z",
+      "notes": "",
+      "position": {
+        "lat": "24.891419479211137",
+        "lng": "14.650268554687502"
       }
     },
     {
-      "id": "cd92",
-      "cityName": "Prochowice",
-      "country": "Poland",
-      "emoji": "https://flagcdn.com/pl.svg",
-      "date": "2025-04-11T11:50:45.910Z",
-      "notes": "Poland",
-      "postition": {
-        "lat": "51.213765926935025",
-        "lng": "16.353149414062504"
-      }
-    },
-    {
-      "id": "7749",
-      "cityName": "Nikolayevsk",
-      "country": "Russian Federation (the)",
-      "emoji": "https://flagcdn.com/ru.svg",
-      "date": "2025-04-11T11:51:20.883Z",
-      "notes": "Moscow",
-      "postition": {
-        "lat": "50.08886893382967",
-        "lng": "45.65368652343751"
-      }
-    },
-    {
-      "id": "6a1a",
-      "cityName": "Bojnurd",
-      "country": "Iran (Islamic Republic of)",
-      "emoji": "https://flagcdn.com/ir.svg",
-      "date": "2025-04-11T11:51:54.398Z",
-      "notes": "Iran",
-      "postition": {
-        "lat": "37.474858084971046",
-        "lng": "57.4200439453125"
-      }
-    },
-    {
-      "id": "b163",
-      "cityName": "Bamyan",
-      "country": "Afghanistan",
-      "emoji": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_the_Taliban.svg",
-      "date": "2025-04-11T11:53:38.021Z",
-      "notes": "Afghanistan",
-      "postition": {
-        "lat": "34.836349990763864",
-        "lng": "67.92846679687501"
+      "id": "3b18",
+      "cityName": "Bardai",
+      "country": "Chad",
+      "emoji": "https://flagcdn.com/td.svg",
+      "date": "2025-04-15T08:49:00.864Z",
+      "notes": "",
+      "position": {
+        "lat": "20.52993312517078",
+        "lng": "18.583374023437504"
       }
     }
   ]

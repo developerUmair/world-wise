@@ -1,6 +1,6 @@
-import { useNavigate, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import styles from "./City.module.css";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useCities } from "../contexts/CitiesContext";
 import Spinner from "./Spinner";
 import BackButton from "./BackButton";
@@ -16,7 +16,6 @@ const formatDate = (date) =>
 function City() {
   const { id } = useParams();
   const { getCity, currentCity, loading } = useCities();
-  const navigate = useNavigate();
 
   useEffect(() => {
     getCity(id);
@@ -29,15 +28,15 @@ function City() {
     <div className={styles.city}>
       <div className={styles.row}>
         <h6>City name</h6>
-        {flagUrl ? (
+        {emoji ? (
           <img
-            src={flagUrl}
+            src={emoji}
             style={{ width: "4rem" }}
             className={styles.emoji}
             alt={`${cityName} flag`}
           />
         ) : (
-          emoji
+          flagUrl
         )}
         <h3>{cityName}</h3>
       </div>

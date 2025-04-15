@@ -92,7 +92,7 @@ function Form() {
       emoji: flag,
       date,
       notes,
-      postition: {
+      position: {
         lat,
         lng,
       },
