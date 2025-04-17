@@ -61,7 +61,7 @@ const reducer = (state, action) => {
 
 function CitiesProvider({ children }) {
   const [state, dispatch] = useReducer(reducer, initialState);
-  const { cities, loading, currentCity, error } = state;
+  const { cities, loading, currentCity } = state;
 
   const getCountryCodeFromEmoji = (emoji) =>
     Array.from(emoji)
@@ -179,7 +179,7 @@ function CitiesProvider({ children }) {
 
   return (
     <CitiesContext.Provider
-      value={{ cities, loading, getCity, currentCity, createCity, deleteCity, error }}
+      value={{ cities, loading, getCity, currentCity, createCity, deleteCity }}
     >
       {children}
     </CitiesContext.Provider>
