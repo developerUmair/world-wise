@@ -13,18 +13,6 @@
       }
     },
     {
-      "id": "85dc",
-      "cityName": "Idri",
-      "country": "Libya",
-      "emoji": "https://flagcdn.com/ly.svg",
-      "date": "2025-04-15T08:48:48.086Z",
-      "notes": "",
-      "position": {
-        "lat": "28.38173504322311",
-        "lng": "10.079956054687502"
-      }
-    },
-    {
       "id": "3b18",
       "cityName": "Bardai",
       "country": "Chad",
@@ -34,6 +22,30 @@
       "position": {
         "lat": "20.52993312517078",
         "lng": "18.583374023437504"
+      }
+    },
+    {
+      "id": "3b7f",
+      "cityName": "Balearic Sea",
+      "country": "Spain",
+      "emoji": "https://flagcdn.com/es.svg",
+      "date": "2025-04-17T09:07:49.038Z",
+      "notes": "Pampulana",
+      "position": {
+        "lat": "40.04864272291728",
+        "lng": "0.12634277343750003"
+      }
+    },
+    {
+      "id": "4a8e",
+      "cityName": "New Leake",
+      "country": "United Kingdom of Great Britain and Northern Ireland (the)",
+      "emoji": "https://flagcdn.com/gb.svg",
+      "date": "2025-04-17T09:12:13.919Z",
+      "notes": "ENGLAND",
+      "position": {
+        "lat": "53.08399207771895",
+        "lng": "0.054903937206560734"
       }
     }
   ]
