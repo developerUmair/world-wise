@@ -37,15 +37,27 @@
       }
     },
     {
-      "id": "4a8e",
-      "cityName": "New Leake",
-      "country": "United Kingdom of Great Britain and Northern Ireland (the)",
-      "emoji": "https://flagcdn.com/gb.svg",
-      "date": "2025-04-17T09:12:13.919Z",
-      "notes": "ENGLAND",
+      "id": "4dc5",
+      "cityName": "Claira",
+      "country": "France",
+      "emoji": "https://flagcdn.com/fr.svg",
+      "date": "2025-04-24T10:01:02.633Z",
+      "notes": "",
       "position": {
-        "lat": "53.08399207771895",
-        "lng": "0.054903937206560734"
+        "lat": "42.75911283724358",
+        "lng": "2.9498291015625004"
+      }
+    },
+    {
+      "id": "faf9",
+      "cityName": "Bucharest",
+      "country": "Romania",
+      "emoji": "https://flagcdn.com/ro.svg",
+      "date": "2025-04-24T10:01:48.247Z",
+      "notes": "",
+      "position": {
+        "lat": "44.41808794374849",
+        "lng": "26.125488281250004"
       }
     }
   ]
