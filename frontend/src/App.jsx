@@ -10,10 +10,12 @@ import City from "./components/City";
 import Form from "./components/Form";
 import CountryList from "./components/CountriesList";
 import { CitiesProvider } from "./contexts/CitiesContext";
+import { AuthProvider } from "./contexts/FakeAuthContext";
 
 const App = () => {
  
   return (
+    <AuthProvider>
     <CitiesProvider>
       <Routes>
         <Route index element={<Homepage />} />
@@ -36,6 +38,7 @@ const App = () => {
         <Route path="*" element={<PageNotFound />} />
       </Routes>
     </CitiesProvider>
+    </AuthProvider>
   );
 };
 

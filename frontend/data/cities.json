@@ -25,18 +25,6 @@
       }
     },
     {
-      "id": "3b7f",
-      "cityName": "Balearic Sea",
-      "country": "Spain",
-      "emoji": "https://flagcdn.com/es.svg",
-      "date": "2025-04-17T09:07:49.038Z",
-      "notes": "Pampulana",
-      "position": {
-        "lat": "40.04864272291728",
-        "lng": "0.12634277343750003"
-      }
-    },
-    {
       "id": "4dc5",
       "cityName": "Claira",
       "country": "France",
@@ -58,6 +46,90 @@
       "position": {
         "lat": "44.41808794374849",
         "lng": "26.125488281250004"
+      }
+    },
+    {
+      "id": "4eeb",
+      "cityName": "Chiva",
+      "country": "Spain",
+      "emoji": "https://flagcdn.com/es.svg",
+      "date": "2025-05-07T11:31:31.820Z",
+      "notes": "",
+      "position": {
+        "lat": "39.42770738465604",
+        "lng": "-0.5712890625000001"
+      }
+    },
+    {
+      "id": "45e8",
+      "cityName": "Foggaret Ezzaou",
+      "country": "Algeria",
+      "emoji": "https://flagcdn.com/dz.svg",
+      "date": "2025-05-07T11:31:52.220Z",
+      "notes": "",
+      "position": {
+        "lat": "27.761329874505233",
+        "lng": "3.0761718750000004"
+      }
+    },
+    {
+      "id": "9bda",
+      "cityName": "Doume",
+      "country": "Cameroon",
+      "emoji": "https://flagcdn.com/cm.svg",
+      "date": "2025-05-07T11:32:05.721Z",
+      "notes": "",
+      "position": {
+        "lat": "4.434044005032582",
+        "lng": "13.359375000000002"
+      }
+    },
+    {
+      "id": "2cc0",
+      "cityName": "Lomela",
+      "country": "Congo (the Democratic Republic of the)",
+      "emoji": "https://flagcdn.com/cd.svg",
+      "date": "2025-05-07T11:32:13.381Z",
+      "notes": "",
+      "position": {
+        "lat": "-1.845383988573187",
+        "lng": "24.257812500000004"
+      }
+    },
+    {
+      "id": "b777",
+      "cityName": "Chamwino",
+      "country": "Tanzania, the United Republic of",
+      "emoji": "https://flagcdn.com/tz.svg",
+      "date": "2025-05-07T11:32:19.203Z",
+      "notes": "",
+      "position": {
+        "lat": "-6.533645130567532",
+        "lng": "35.99121093750001"
+      }
+    },
+    {
+      "id": "6a28",
+      "cityName": "Zhezqazghan",
+      "country": "Kazakhstan",
+      "emoji": "https://flagcdn.com/kz.svg",
+      "date": "2025-05-07T11:33:03.584Z",
+      "notes": "",
+      "position": {
+        "lat": "47.754097979680026",
+        "lng": "67.67578125000001"
+      }
+    },
+    {
+      "id": "f160",
+      "cityName": "Vytegra",
+      "country": "Russian Federation (the)",
+      "emoji": "https://flagcdn.com/ru.svg",
+      "date": "2025-05-07T11:33:14.515Z",
+      "notes": "",
+      "position": {
+        "lat": "61.10078883158897",
+        "lng": "36.21093750000001"
       }
     }
   ]
