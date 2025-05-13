@@ -34,15 +34,22 @@ const FAKE_USER = {
 };
 
 const AuthProvider = ({ children }) => {
-  const [state, dispatch] = useReducer(reducer, initialState);
+  const [state, dispatch] = useReducer(reducer, () => {
+    const storedUser = localStorage.getItem("user");
+    return storedUser
+      ? { user: JSON.parse(storedUser), isAuthenticated: true }
+      : initialState;
+  });
   const { user, isAuthenticated } = state;
 
   function login(email, password) {
     if (email === FAKE_USER.email && password === FAKE_USER.password) {
+      localStorage.setItem("user", JSON.stringify(FAKE_USER));
       dispatch({ type: "login", payload: FAKE_USER });
     }
   }
   function logout() {
+    localStorage.removeItem("user");
     dispatch({ type: "logout" });
   }
 
@@ -58,7 +65,7 @@ function useAuth() {
   if (context === undefined) {
     throw new Error("useAuth must be used within an AuthProvider");
   }
-  return context
+  return context;
 }
 
 export { AuthProvider, useAuth };

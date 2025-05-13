@@ -37,18 +37,6 @@
       }
     },
     {
-      "id": "faf9",
-      "cityName": "Bucharest",
-      "country": "Romania",
-      "emoji": "https://flagcdn.com/ro.svg",
-      "date": "2025-04-24T10:01:48.247Z",
-      "notes": "",
-      "position": {
-        "lat": "44.41808794374849",
-        "lng": "26.125488281250004"
-      }
-    },
-    {
       "id": "4eeb",
       "cityName": "Chiva",
       "country": "Spain",
@@ -130,6 +118,30 @@
       "position": {
         "lat": "61.10078883158897",
         "lng": "36.21093750000001"
+      }
+    },
+    {
+      "id": "3dd5",
+      "cityName": "Islamabad",
+      "country": "Pakistan",
+      "emoji": "https://flagcdn.com/pk.svg",
+      "date": "2025-05-13T10:13:01.013Z",
+      "notes": "",
+      "position": {
+        "lat": "33.710632271492095",
+        "lng": "73.18542480468751"
+      }
+    },
+    {
+      "id": "5602",
+      "cityName": "Lahor",
+      "country": "Pakistan",
+      "emoji": "https://flagcdn.com/pk.svg",
+      "date": "2025-05-13T10:13:26.127Z",
+      "notes": "",
+      "position": {
+        "lat": "34.0099810521927",
+        "lng": "72.32574462890626"
       }
     }
   ]

@@ -11,33 +11,34 @@ import Form from "./components/Form";
 import CountryList from "./components/CountriesList";
 import { CitiesProvider } from "./contexts/CitiesContext";
 import { AuthProvider } from "./contexts/FakeAuthContext";
+import ProtectedRoute from "./components/ProtectedRoute";
 
 const App = () => {
- 
   return (
     <AuthProvider>
-    <CitiesProvider>
-      <Routes>
-        <Route index element={<Homepage />} />
-        <Route path="product" element={<Product />} />
-        <Route path="pricing" element={<Pricing />} />
-        <Route path="app" element={<AppLayout />}>
-          <Route index element={<Navigate replace to="cities" />} />
+      <CitiesProvider>
+        <Routes>
+          <Route index element={<Homepage />} />
+          <Route path="product" element={<Product />} />
+          <Route path="pricing" element={<Pricing />} />
           <Route
-            path="cities"
-            element={<CityList />}
-          />
-          <Route
-            path="countries"
-            element={<CountryList />}
-          />
-          <Route path="cities/:id" element={<City />} />
-          <Route path="form" element={<Form />} />
-        </Route>
-        <Route path="login" element={<Login />} />
-        <Route path="*" element={<PageNotFound />} />
-      </Routes>
-    </CitiesProvider>
+            path="app"
+            element={
+              <ProtectedRoute>
+                <AppLayout />
+              </ProtectedRoute>
+            }
+          >
+            <Route index element={<Navigate replace to="cities" />} />
+            <Route path="cities" element={<CityList />} />
+            <Route path="countries" element={<CountryList />} />
+            <Route path="cities/:id" element={<City />} />
+            <Route path="form" element={<Form />} />
+          </Route>
+          <Route path="login" element={<Login />} />
+          <Route path="*" element={<PageNotFound />} />
+        </Routes>
+      </CitiesProvider>
     </AuthProvider>
   );
 };
